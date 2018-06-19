@@ -5,5 +5,5 @@ docker run -d --name redmine -h redmine \
     -e LETSENCRYPT_EMAIL=letsencrypt@ipepe.pl \
     --restart=always -i -t -P \
     -v /opt/docker/redmine/data/sqlite:/usr/src/redmine/sqlite \
-    -v /opt/docker/redmine/data/files:/my/own/datadir:/usr/src/redmine/files \
+    -v /opt/docker/redmine/data/files:/usr/src/redmine/files \
     ipepe/redmine
