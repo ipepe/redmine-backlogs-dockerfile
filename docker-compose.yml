@@ -4,6 +4,6 @@ services:
     build: .
     ports:
      - "8080:3000"
-    volumes:
-      - '/opt/docker/redmine/data/sqlite:/usr/src/redmine/sqlite'
-      - '/opt/docker/redmine/data/files:/usr/src/redmine/files'
+#    volumes:
+#      - './data/sqlite:/usr/src/redmine/sqlite'
+#      - './data/files:/usr/src/redmine/files'
