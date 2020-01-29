@@ -4,8 +4,6 @@ services:
     build: .
     ports:
      - "8080:3000"
-#     - "2222:22"
-#     - "15432:5432"
-#    volumes:
-#      - ./data:/root/shared
-#docker-compose up --build
+    volumes:
+      - '/opt/docker/redmine/data/sqlite:/usr/src/redmine/sqlite'
+      - '/opt/docker/redmine/data/files:/usr/src/redmine/files'
